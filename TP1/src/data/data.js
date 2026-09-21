@@ -1,8 +1,4 @@
-<script setup>
-import { ref } from 'vue'
-import ListeArticles from './components/ListeArticles.vue';
-
-const articles = ref([
+export const articles = [
   { id: 1, name: 'Cactus', description: 'Green cactus', price: 10, image: '#' },
   { id: 2, name: 'Bonzai', description: 'Small bonsai tree', price: 20, image: '#' },
   { id: 3, name: 'Succulent', description: 'Small succulent plant', price: 15, image: '#' },  { id: 2, name: 'Bonzai', description: 'Small bonsai tree', price: 20, image: '#' },
@@ -15,23 +11,4 @@ const articles = ref([
   { id: 10, name: 'Bonzai', description: 'Small bonsai tree', price: 20, image: '#' },
   { id: 11, name: 'Bonzai', description: 'Small bonsai tree', price: 20, image: '#' },
   { id: 12, name: 'Bonzai', description: 'Small bonsai tree', price: 20, image: '#' },
-
-])
-
-</script>
-
-<template>
-  <h1>TP1 - Vue.js</h1>
-  <RouterView />
-</template>
-
-<style scoped>
-#CardList {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 1rem 0;
-  padding: 0;
-  border: 1px solid pink;
-}
-</style>
+]
