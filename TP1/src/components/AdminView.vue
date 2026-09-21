@@ -1,5 +1,12 @@
 <script setup>
 import { articles } from '../data/data.js';
+
+function deleteItem(id) {
+    const index = articles.findIndex(a => a.id === id)
+    if(index !== -1) {
+        articles.splice(index, 1)
+    }
+}
 </script>
 
 <template>
@@ -14,15 +21,15 @@ import { articles } from '../data/data.js';
             </tr>
         </thead>
         <tbody>
-            <tr v-for="article in articles">
+            <tr v-for="article in articles" :key="article.id">
                 <td>{{ article.name }}</td>
                 <td class="description">{{ article.description }}</td>
                 <td>{{ article.price }}</td>
                 <td>{{ article.image }}</td>
-                <td><button @click="deleteItem">Delete</button></td>
+                <td><button @click="deleteItem(article.id)">Delete</button></td>
             </tr>
         </tbody>
-    </table>>
+    </table>
 </template>
 
 <style scoped>

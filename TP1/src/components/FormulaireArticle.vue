@@ -24,7 +24,7 @@ function addArticle() {
         image: image.value.trim() || '#',
     })
 
-    router.push('/')
+    router.push('/admin')
 }
 
 </script>
