@@ -4,8 +4,16 @@ const search = defineModel()
 
 <template>
     <section>
-        <input type="textfield" placeholder="Search..." v-model="search"/>
+        <input id="searchBar" placeholder="Search..." v-model="search"/>
     </section>
 </template>
 
-<style scoped></style>
+<style scoped>
+#searchBar {
+    border: .05rem solid black;
+    border-radius: 0;
+    width: 20rem;
+    height: 2rem;
+    padding: 0 .5rem;
+}
+</style>

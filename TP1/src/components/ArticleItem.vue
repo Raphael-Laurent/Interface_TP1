@@ -7,7 +7,7 @@ defineProps({
 </script>
 
 <template>
-    <RouterLink :to="`/article/${article.id}`">
+    <RouterLink class="CardLink" :to="`/article/${article.id}`">
         <section class="CardBox">
             <h2>{{ article.name }}</h2>
         </section>
@@ -15,6 +15,11 @@ defineProps({
 </template>
 
 <style scoped>
+.CardLink {
+    text-decoration: none;
+    color: black;
+}
+
 .CardBox {      
     border: .1rem solid black;
     background-color: rgb(172, 170, 170);
@@ -27,6 +32,7 @@ defineProps({
 }
 
 .CardBox:hover {
+    border: .1rem solid red;
     color: red;
     cursor: pointer;
 }
