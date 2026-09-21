@@ -1,10 +1,10 @@
 <script setup>
-import TopComponent from './components/TopComponent.vue';
+import Navigation from './components/Navigation.vue';
 
 </script>
 
 <template>
-  <TopComponent />
+  <Navigation />
   <RouterView />
 </template>
 

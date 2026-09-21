@@ -1,0 +1,62 @@
+<script setup>
+import { articles } from '../data/data.js';
+</script>
+
+<template>
+    <RouterLink class="link" to="/ajouter">Add an item</RouterLink>
+    <table id="table">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Description</th>
+                <th>Price</th>
+                <th>Image</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr v-for="article in articles">
+                <td>{{ article.name }}</td>
+                <td class="description">{{ article.description }}</td>
+                <td>{{ article.price }}</td>
+                <td>{{ article.image }}</td>
+                <td><button @click="deleteItem">Delete</button></td>
+            </tr>
+        </tbody>
+    </table>>
+</template>
+
+<style scoped>
+#table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#table th,
+#table td {
+    border: .05rem solid black;
+    padding: .5rem 1rem;
+    text-align: left;
+}
+
+#table .description {
+    max-width: 20rem;
+    white-space: normal; 
+    word-wrap: break-word;
+}
+
+#table tbody tr:nth-child(odd) {
+    background-color: lightgrey;
+}
+
+.link {
+  text-decoration: none;
+  color: black;
+  background-color: grey;
+  padding: .5rem 1rem;
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+
+.link:hover {
+  color: red;
+}</style>

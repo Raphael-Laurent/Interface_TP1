@@ -15,5 +15,6 @@ const search = defineModel()
     width: 20rem;
     height: 2rem;
     padding: 0 .5rem;
+    margin: 0 0 1rem 0;
 }
 </style>
