@@ -35,7 +35,6 @@ function addArticle() {
             <input v-model="name" placeholder="Name of the item">
             <input v-model="description" placeholder="description">
             <input v-model.number="price" type="number" placeholder="price">
-            <input v-model="image" placeholder="link of the image">
             <button type="submit" >Submit</button>
         </form>
     </section>

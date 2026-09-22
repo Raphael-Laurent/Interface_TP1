@@ -1,6 +1,5 @@
 <script setup>
 import { ref, computed } from 'vue'
-import { RouterLink } from 'vue-router'
 import { articles } from '../data/data.js';
 import ListeArticles from './ListeArticles.vue';
 import BarreRecherche from './BarreRecherche.vue';

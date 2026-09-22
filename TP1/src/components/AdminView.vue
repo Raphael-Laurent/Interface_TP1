@@ -17,7 +17,6 @@ function deleteItem(id) {
                 <th>Name</th>
                 <th>Description</th>
                 <th>Price</th>
-                <th>Image</th>
             </tr>
         </thead>
         <tbody>
@@ -25,7 +24,6 @@ function deleteItem(id) {
                 <td>{{ article.name }}</td>
                 <td class="description">{{ article.description }}</td>
                 <td>{{ article.price }}</td>
-                <td>{{ article.image }}</td>
                 <td><button @click="deleteItem(article.id)">Delete</button></td>
             </tr>
         </tbody>

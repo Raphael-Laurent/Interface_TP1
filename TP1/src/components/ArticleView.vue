@@ -35,8 +35,6 @@ function supprimerPanier() {
     <section v-if="article">
     <h1>{{ article.name }}</h1>
 
-    <!-- image-->
-
     <p>{{ article.price }}</p>
 
     <p>{{ article.description }}</p>
