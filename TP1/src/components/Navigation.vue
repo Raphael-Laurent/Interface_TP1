@@ -10,7 +10,7 @@
 
 <style scoped>
 #topComponent {
-    background-color: grey;
+    background-color: #63c89c;
     height: 4rem;
     display: flex;
     flex-direction: row;

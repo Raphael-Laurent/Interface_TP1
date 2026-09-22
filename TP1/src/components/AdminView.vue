@@ -50,18 +50,18 @@ function deleteItem(id) {
 }
 
 #table tbody tr:nth-child(odd) {
-    background-color: lightgrey;
+    background-color: #ed4b7399;
 }
 
 .link {
   text-decoration: none;
   color: black;
-  background-color: grey;
+  background-color: #63c89c;
   padding: .5rem 1rem;
   display: inline-block;
   margin-bottom: 1rem;
 }
 
 .link:hover {
-  color: red;
+  color: #e61e50;
 }</style>

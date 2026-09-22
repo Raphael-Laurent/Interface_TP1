@@ -22,7 +22,7 @@ defineProps({
 
 .CardBox {      
     border: .1rem solid black;
-    background-color: rgb(172, 170, 170);
+    background-color: #63c89c;
     padding: 1rem 2rem;
     min-width: 10rem;
     min-height: 7rem;
@@ -32,8 +32,8 @@ defineProps({
 }
 
 .CardBox:hover {
-    border: .1rem solid red;
-    color: red;
+    border: .1rem solid #e61e50;
+    color: #e61e50;
     cursor: pointer;
 }
 </style>
