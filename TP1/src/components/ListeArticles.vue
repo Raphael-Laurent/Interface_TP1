@@ -17,8 +17,7 @@ defineProps({
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 1rem 0;
+  gap: 1rem .3rem;
   padding: 0;
-  border: 1px solid pink;
 }
 </style>

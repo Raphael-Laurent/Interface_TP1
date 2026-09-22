@@ -14,3 +14,7 @@ export const articles = reactive([
   { id: 11, name: 'Bonzai', description: 'Small bonsai tree', price: 20, image: '#' },
   { id: 12, name: 'Bonzai', description: 'Small bonsai tree', price: 20, image: '#' },
 ])
+
+export const panier = reactive([
+  {id: 1, name: 'test'}
+])

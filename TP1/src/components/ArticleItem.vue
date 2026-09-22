@@ -24,8 +24,8 @@ defineProps({
     border: .1rem solid black;
     background-color: rgb(172, 170, 170);
     padding: 1rem 2rem;
-    min-width: 14rem;
-    min-height: 10rem;
+    min-width: 10rem;
+    min-height: 7rem;
     display: flex;
     justify-content: center;
     align-items: center;

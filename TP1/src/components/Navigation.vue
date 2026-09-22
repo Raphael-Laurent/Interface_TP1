@@ -1,8 +1,8 @@
 <template>
     <section id="topComponent">
-        <RouterLink to="/">TP1 - Vue.js</RouterLink>
+        <RouterLink to="/">Home</RouterLink>
         <div id="rightLinks">
-            <RouterLink to="/admin">Panier</RouterLink>
+            <RouterLink to="/panier">Cart</RouterLink>
             <RouterLink to="/admin">Admin</RouterLink>
         </div>
     </section>
